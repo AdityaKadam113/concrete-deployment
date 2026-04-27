@@ -1,22 +1,39 @@
-# Concrete Strength Prediction API
+# 🚀 Concrete Strength Prediction API
 
-This project predicts concrete compressive strength using XGBoost.
+This project predicts concrete compressive strength using a Machine Learning model (XGBoost) and serves predictions via a FastAPI-based REST API.
 
-## Features
-- Machine Learning Model (XGBoost)
-- FastAPI Deployment
-- REST API
+---
 
-##  Installation
-pip install -r requirements.txt
+## 🌐 Live Demo
+🔗 API: https://concrete-deployment.onrender.com  
+📘 Docs: https://concrete-deployment.onrender.com/docs  
 
-##  Run Locally
-uvicorn app:app --reload
+---
 
-##  API Endpoint
-POST /predict
+## 🧠 Project Overview
+- Built a regression model to predict concrete strength
+- Trained using XGBoost Regressor
+- Deployed as a REST API using FastAPI
+- Hosted on Render cloud platform
 
-##  Input Example
+---
+
+## ⚙️ Tech Stack
+- Python
+- XGBoost
+- FastAPI
+- Scikit-learn
+- Render (Deployment)
+
+---
+
+## 📡 API Usage
+
+### Endpoint:
+POST `/predict`
+
+### Input Example:
+```json
 {
   "cement": 540.0,
   "slag": 0.0,
@@ -27,9 +44,3 @@ POST /predict
   "fineagg": 676.0,
   "age": 28
 }
-
-##  Model
-Trained using XGBoost Regressor
-
-##  Deployment
-Deployed on Render / Railway
