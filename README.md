@@ -2,21 +2,21 @@
 
 This project predicts concrete compressive strength using XGBoost.
 
-## 🚀 Features
+## Features
 - Machine Learning Model (XGBoost)
 - FastAPI Deployment
 - REST API
 
-## 📦 Installation
+##  Installation
 pip install -r requirements.txt
 
-## ▶️ Run Locally
+##  Run Locally
 uvicorn app:app --reload
 
-## 📡 API Endpoint
+##  API Endpoint
 POST /predict
 
-## 📊 Input Example
+##  Input Example
 {
   "cement": 540.0,
   "slag": 0.0,
@@ -28,8 +28,8 @@ POST /predict
   "age": 28
 }
 
-## 🧠 Model
+##  Model
 Trained using XGBoost Regressor
 
-## ☁️ Deployment
+##  Deployment
 Deployed on Render / Railway
